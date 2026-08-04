@@ -1,0 +1,814 @@
+/* ==========================================
+   YOUR STORY
+   PART 1A
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#eef3ea;
+    color:#324b3a;
+
+    overflow-x:hidden;
+    line-height:1.8;
+
+}
+
+/* Background */
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    linear-gradient(
+    rgba(244,248,243,.65),
+    rgba(244,248,243,.88)
+    ),
+
+    url("assets/cover.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    z-index:-3;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:linear-gradient(
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.22)
+
+    );
+
+    backdrop-filter:blur(2px);
+
+    z-index:-2;
+
+}
+
+/* Main Section */
+
+section{
+
+    width:min(1100px,92%);
+    margin:auto;
+
+    padding:120px 0;
+
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    max-width:750px;
+
+}
+
+/* Small Title */
+
+.small-title{
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#5b7c64;
+
+    margin-bottom:25px;
+
+    font-size:.85rem;
+
+}
+
+/* Main Title */
+
+.hero h1{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:5rem;
+
+    font-weight:600;
+
+    color:#2f4636;
+
+}
+
+/* Subtitle */
+
+.hero h2{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-weight:400;
+
+    font-size:1.8rem;
+
+    color:#59715d;
+
+    margin-top:15px;
+
+    margin-bottom:45px;
+
+}
+
+/* Button */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:
+
+    18px 48px;
+
+    border-radius:999px;
+
+    background:#5b7c64;
+
+    color:white;
+
+    font-size:1rem;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    background:#324b3a;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 15px 35px
+    rgba(0,0,0,.15);
+
+  }
+/* ==========================================
+   YOUR STORY
+   PART 1B
+========================================== */
+
+/* Intro */
+
+.intro{
+
+    display:flex;
+    justify-content:center;
+    text-align:center;
+
+}
+
+.container{
+
+    max-width:760px;
+
+}
+
+.quote{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    font-size:2.2rem;
+
+    color:#35523d;
+
+    margin-bottom:50px;
+
+    line-height:1.5;
+
+}
+
+.intro-text{
+
+    font-size:1.05rem;
+
+    color:#546b5a;
+
+}
+
+/* Chapter */
+
+.chapter{
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.reverse{
+
+    direction:rtl;
+
+}
+
+.reverse>*{
+
+    direction:ltr;
+
+}
+
+/* Image */
+
+.chapter-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:
+
+    0 25px 60px
+
+    rgba(0,0,0,.18);
+
+    transition:.45s;
+
+}
+
+.chapter-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* Text */
+
+.chapter-content span{
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#6d8b72;
+
+    font-size:.8rem;
+
+}
+
+.chapter-content h2{
+
+    font-family:
+
+    "Cormorant Garamond",
+    serif;
+
+    font-size:3.3rem;
+
+    margin:
+
+    18px 0 28px;
+
+    color:#2d4636;
+
+}
+
+.chapter-content p{
+
+    margin-bottom:22px;
+
+    color:#556b5c;
+
+    font-size:1rem;
+
+}
+
+/* Divider */
+
+.divider{
+
+    text-align:center;
+
+}
+
+.divider h3{
+
+    font-family:
+
+    "Cormorant Garamond",
+    serif;
+
+    font-size:2.4rem;
+
+    color:#4e6755;
+
+    line-height:1.7;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+/* Quote Section */
+
+.quote-section{
+
+    text-align:center;
+
+         }
+/* ==========================================
+   YOUR STORY
+   PART 2
+==========================================*/
+
+/* Gallery */
+
+.gallery{
+
+    text-align:center;
+
+}
+
+.gallery h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3rem;
+
+    color:#304838;
+
+    margin-bottom:15px;
+
+}
+
+.gallery p{
+
+    color:#647a69;
+
+    margin-bottom:60px;
+
+}
+
+.polaroid-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:35px;
+
+}
+
+.polaroid{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.12);
+
+    transition:.45s;
+
+}
+
+.polaroid:hover{
+
+    transform:
+
+    translateY(-10px)
+    rotate(-2deg);
+
+}
+
+.polaroid img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+.polaroid span{
+
+    display:block;
+
+    margin-top:18px;
+
+    color:#58705e;
+
+}
+
+/* Music */
+
+.music{
+
+    text-align:center;
+
+}
+
+.music h2{
+
+    font-family:
+
+    "Cormorant Garamond",serif;
+
+    font-size:3rem;
+
+    color:#2d4636;
+
+    margin-bottom:15px;
+
+}
+
+.music p{
+
+    color:#647b69;
+
+    margin-bottom:35px;
+
+}
+
+iframe{
+
+    border:none;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 20px 45px
+
+    rgba(0,0,0,.15);
+
+}
+
+/* Ending */
+
+.ending{
+
+    text-align:center;
+
+}
+
+.ending-small{
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    color:#6a8871;
+
+    margin-bottom:20px;
+
+}
+
+.ending h2{
+
+    font-family:
+
+    "Cormorant Garamond",serif;
+
+    font-size:3.5rem;
+
+    color:#2d4636;
+
+    margin-bottom:30px;
+
+}
+
+.ending p{
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    color:#5e7564;
+
+}
+
+/* Final */
+
+.final-section{
+
+    text-align:center;
+
+}
+
+.final-section h2{
+
+    font-family:
+
+    "Cormorant Garamond",serif;
+
+    font-size:4rem;
+
+    line-height:1.4;
+
+    color:#35503d;
+
+}
+
+.final-section p{
+
+    margin-top:25px;
+
+    color:#64806a;
+
+    font-size:1.1rem;
+
+}
+
+/* Footer */
+
+footer{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    color:#7b9381;
+
+    font-size:.95rem;
+
+  }
+/* ==========================================
+   YOUR STORY
+   PART 3
+==========================================*/
+
+/* Floating Leaves */
+
+.leaves{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+.leaves span{
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    background:rgba(92,129,99,.18);
+
+    border-radius:0 100% 0 100%;
+
+    animation:leafFall linear infinite;
+
+}
+
+.leaves span:nth-child(1){
+
+    left:10%;
+    animation-duration:11s;
+    animation-delay:0s;
+
+}
+
+.leaves span:nth-child(2){
+
+    left:25%;
+    animation-duration:13s;
+    animation-delay:2s;
+
+}
+
+.leaves span:nth-child(3){
+
+    left:45%;
+    animation-duration:10s;
+    animation-delay:1s;
+
+}
+
+.leaves span:nth-child(4){
+
+    left:65%;
+    animation-duration:15s;
+    animation-delay:4s;
+
+}
+
+.leaves span:nth-child(5){
+
+    left:80%;
+    animation-duration:12s;
+    animation-delay:3s;
+
+}
+
+.leaves span:nth-child(6){
+
+    left:93%;
+    animation-duration:16s;
+    animation-delay:5s;
+
+}
+
+/* Leaf Animation */
+
+@keyframes leafFall{
+
+    0%{
+
+        transform:
+
+        translateY(-120px)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:
+
+        translateY(120vh)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* Fade */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:9px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#5b7c64;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf3ec;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:3.4rem;
+
+}
+
+.hero h2{
+
+    font-size:1.35rem;
+
+}
+
+.chapter{
+
+    grid-template-columns:1fr;
+
+}
+
+.reverse{
+
+    direction:ltr;
+
+}
+
+.chapter-content{
+
+    text-align:center;
+
+}
+
+.chapter h2{
+
+    font-size:2.6rem;
+
+}
+
+.final-section h2{
+
+    font-size:2.8rem;
+
+}
+
+.quote{
+
+    font-size:1.8rem;
+
+}
+
+.divider h3{
+
+    font-size:1.8rem;
+
+}
+
+}
+
+/* Small
