@@ -4,7 +4,6 @@
 ========================================== */
 
 const openButton = document.getElementById("openBook");
-const music = document.getElementById("natureMusic");
 const hero = document.querySelector(".hero");
 
 const hiddenElements = document.querySelectorAll(".hidden");
@@ -32,9 +31,9 @@ openButton.addEventListener("click", () => {
 
     }, 900);
 
-    music.volume = 0.35;
+    
 
-    music.play().catch(() => {});
+
 
 });
 
